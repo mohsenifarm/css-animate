@@ -62,18 +62,24 @@ body {
 
     animation-name: moveInLeft;
     animation-duration: 1s;
-    
-
-    /* animation-timing-function: ease-out */
+    animation-timing-function: ease-out;
     /* animation-delay: 3s; */
     /* animation-iteration-count: 3; */
 
+    /* -----points------- */
+    /* animation-delay means how many seconds it should has delay */
+    /* animation-iteration-count: how maniy times animation will run */
+    /* animation-timing-function:has many propartyies that shown models of 
+    timing animation */
 }
 .heading-primary-sub {
     display: block;
     font-size: 20px;
     font-weight: 700px;
     letter-spacing: 17.4px;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+
 }
 
 @keyframes moveInLeft {
@@ -83,6 +89,19 @@ body {
     }
     80% {
         transform: translateX(10px)
+    }
+    100% {
+        opacity: 1;
+        transform:translate(0) 
+    }
+}
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translatex(100px)
+    }
+    80% {
+        transform: translateX(-10px)
     }
     100% {
         opacity: 1;
